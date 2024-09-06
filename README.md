@@ -1,14 +1,6 @@
 # Awesome Go Storage [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-A curated list of awesome Go storage projects and libraries. Inspired by [awesome-go](https://github.com/avelino/awesome-go).
-
-
-### Contributing
-
-Please take a quick gander at the [contribution guidelines](https://github.com/gostor/awesome-go-storage/blob/master/CONTRIBUTING.md) first. Thanks to all [contributors](https://github.com/gostor/awesome-go-storage/graphs/contributors); you rock!
-
-#### *If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you!*
-
+Список удивительных проектов хранения и библиотек Go. Вдохновленный [awesome-go](https://x07.it/catalog/awesome/awesome-go).
 
 ### Contents
 
@@ -22,174 +14,173 @@ Please take a quick gander at the [contribution guidelines](https://github.com/g
 
 ## Storage Server
 
-*Storage Servers implemented in Go.*
+*Серверы хранения данных, реализованные на Go.*
 
-* [minio](https://github.com/minio/minio) - Minio is an open source object storage server compatible with Amazon S3 APIs.
-* [rclone](https://github.com/ncw/rclone) - "rsync for cloud storage" - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfile…
-* [perkeep](https://github.com/perkeep/perkeep) - Perkeep is your personal storage system for life: a way of storing, syncing, sharing, modelling and backing up content.
-* [s3git](https://github.com/s3git/s3git) - Git for Cloud Storage. Distributed Version Control for Data.
-* [storj](https://github.com/storj/storj) - Decentralized cloud object storage that is affordable, easy to use, private, and secure. 
-* [rook](https://github.com/rook/rook) - Open, Cloud Native, and Universal Distributed Storage.
-* [longhorn](https://github.com/rancher/longhorn) - Longhorn is an open source persistent block storage server delivered via containers. 
+* [minio](https://github.com/minio/minio) - Minio - сервер объектного хранения с открытым исходным кодом, совместимый с API Amazon S3.
+* [rclone](https://github.com/ncw/rclone) - «rsync для облачных хранилищ» - Google Drive, Amazon Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Cloudfile...
+* [perkeep](https://github.com/perkeep/perkeep) - Perkeep - это ваша персональная система хранения данных на всю жизнь: способ хранения, синхронизации, обмена, моделирования и резервного копирования контента.
+* [s3git](https://github.com/s3git/s3git) - Git для облачного хранилища. Распределенный контроль версий для данных.
+* [storj](https://github.com/storj/storj) - Децентрализованное облачное хранилище объектов, доступное, простое в использовании, приватное и безопасное. 
+* [rook](https://github.com/rook/rook) - Открытое, облачное и универсальное распределенное хранилище.
+* [longhorn](https://github.com/rancher/longhorn) - Longhorn - это сервер постоянного блочного хранения с открытым исходным кодом, поставляемый через контейнеры. 
 
 ## Key-Value Store
 
-*Key-Value Store implemented in Go.*
+*Хранилище ключей-значений, реализованное на Go.*
 
-* [Bitcask](https://git.mills.io/prologic/bitcask) - Bitcask is an embeddable, persistent and fast key-value (KV) database written in pure Go with predictable read/write performance, low latency and high throughput thanks to the bitcask on-disk layout (LSM+WAL).
-* [Bitraft](https://git.mills.io/prologic/bitraft) - Bitraft is a distributed raft-based key/value store with a Redis-compatible protocol. It uses [Bitcask](https://git.mills.io/prologic/bitcask) for high performance/throughout and low latency.
-* [BadgerDB](https://github.com/dgraph-io/badger) - BadgerDB is an embeddable, persistent, simple and fast key-value (KV) database written in pure Go. It's meant to be a performant alternative to non-Go-based key-value stores like RocksDB.
-* [column](https://github.com/kelindar/column) - Embeddable, columnar, in-memory store with bitmap indexing, transaction and zero-alloc quering.
-* [consul](https://github.com/hashicorp/consul) - Distributed consistent replicated key-value store for service discovery and configuration.
-* [diskv](https://github.com/peterbourgon/diskv) - A disk-backed key-value store.
-* [etcd](https://github.com/coreos/etcd) - Distributed reliable key-value store for the most critical data of a distributed system.
-* [go-cache](https://github.com/patrickmn/go-cache) - An in-memory key:value store/cache (similar to Memcached) library for Go, suitable for single-machine applications.
-* [IceFireDB](https://github.com/IceFireDB/IceFireDB) - Distributed disk storage database using the Raft and Redis protocols.
-* [nutsdb](https://github.com/xujiajun/nutsdb) - Nutsdb is a simple, fast, embeddable, persistent key/value store written in pure Go. It supports fully serializable transactions and many data structures such as list, set, sorted set.
-* [pogreb](https://github.com/akrylysov/pogreb) - Embedded key-value store for read-heavy workloads.
-* [rosedb](https://github.com/roseduan/rosedb) - A fast, stable and embedded k-v database in pure Golang, supports string, list, hash, set, sorted set.
-* [LotusDB](https://github.com/flower-corp/lotusdb) - Fast k/v storage compatible with lsm tree and b+tree.
+* [Bitcask](https://git.mills.io/prologic/bitcask) - Bitcask - это встраиваемая, постоянная и быстрая база данных ключ-значение (KV), написанная на чистом Go, с предсказуемой производительностью чтения/записи, низкой задержкой и высокой пропускной способностью благодаря компоновке bitcask на диске (LSM+WAL).
+* [Bitraft](https://git.mills.io/prologic/bitraft) - Bitraft - это распределенное хранилище ключей/значений на основе плота с протоколом, совместимым с Redis. Оно использует [Bitcask](https://git.mills.io/prologic/bitcask) для высокой производительности/проходимости и низкой задержки.
+* [BadgerDB](https://github.com/dgraph-io/badger) - BadgerDB - это встраиваемая, постоянная, простая и быстрая база данных ключ-значение (KV), написанная на чистом Go. Она призвана стать производительной альтернативой не основанным на Go хранилищам ключевых значений, таким как RocksDB.
+* [column](https://github.com/kelindar/column) - встраиваемое, столбцовое, in-memory хранилище с растровой индексацией, транзакциями и кверингом с нулевым распределением.
+* [consul](https://github.com/hashicorp/consul) - Распределенное последовательное реплицируемое хранилище ключевых значений для обнаружения и настройки сервисов.
+* [diskv](https://github.com/peterbourgon/diskv) - Хранилище ключевых значений с поддержкой диска.
+* [etcd](https://github.com/coreos/etcd) - Распределенное надежное хранилище ключевых значений для наиболее важных данных распределенной системы.
+* [go-cache](https://github.com/patrickmn/go-cache) - Библиотека in-memory key:value store/cache (аналогичная Memcached) для Go, подходит для одномашинных приложений.
+* [IceFireDB](https://github.com/IceFireDB/IceFireDB) - Распределенная дисковая база данных, использующая протоколы Raft и Redis.
+* [nutsdb](https://github.com/xujiajun/nutsdb) - Nutsdb - это простое, быстрое, встраиваемое, постоянное хранилище ключей/значений, написанное на чистом Go. Оно поддерживает полностью сериализуемые транзакции и многие структуры данных, такие как список, набор, сортированный набор.
+* [pogreb](https://github.com/akrylysov/pogreb) - встраиваемое хранилище ключей-значений для рабочих нагрузок с высокой интенсивностью чтения.
+* [rosedb](https://github.com/roseduan/rosedb) - Быстрая, стабильная и встроенная k-v база данных на чистом Golang, поддерживает строки, списки, хэши, наборы, сортированные наборы.
+* [LotusDB](https://github.com/flower-corp/lotusdb) - Быстрое k/v хранилище, совместимое с lsm tree и b+tree.
 
 ## File System
 
-*File Systems implemented in Go.*
+*Файловые системы, реализованные в Go.*
 
-* [afero](https://github.com/spf13/afero) - A FileSystem Abstraction System for Go
-* [fsnotify](https://github.com/fsnotify/fsnotify) - Cross-platform file system notifications for Go.
-* [juicefs](https://github.com/juicedata/juicefs) - A distributed POSIX file system built on top of Redis and S3.
-* [gcsfuse](https://github.com/GoogleCloudPlatform/gcsfuse) - A user-space file system for interacting with Google Cloud Storage.
-* [git-lfs](https://github.com/git-lfs/git-lfs) - Git extension for versioning large files.
-* [go-systemd](https://github.com/coreos/go-systemd) - Go bindings to systemd socket activation, journal, D-Bus, and unit files.
-* [goofys](https://github.com/kahing/goofys) - A high-performance, POSIX-ish Amazon S3 file system written in Go.
-* [minikeyvalue](https://github.com/geohot/minikeyvalue) - A ~1000 line distributed key value store.
-* [seaweedfs](https://github.com/chrislusf/seaweedfs) - SeaweedFS is a simple and highly scalable distributed file system for small files.
-* [svfs](https://github.com/ovh/svfs) - A virtual file system over Openstack Swift built upon fuse.
-
+* [afero](https://github.com/spf13/afero) - Система абстракции файловой системы для Go.
+* [fsnotify](https://github.com/fsnotify/fsnotify) - Кроссплатформенная система уведомлений о файловой системе для Go.
+* [juicefs](https://github.com/juicedata/juicefs) - Распределенная POSIX файловая система, построенная на базе Redis и S3.
+* [gcsfuse](https://github.com/GoogleCloudPlatform/gcsfuse) - Файловая система пользовательского пространства для взаимодействия с Google Cloud Storage.
+* [git-lfs](https://github.com/git-lfs/git-lfs) - расширение Git для версионирования больших файлов.
+* [go-systemd](https://github.com/coreos/go-systemd) - Связки Go для активации сокетов systemd, журнала, D-Bus и юнит-файлов.
+* [goofys](https://github.com/kahing/goofys) - Высокопроизводительная, POSIX-ish файловая система Amazon S3, написанная на Go.
+* [minikeyvalue](https://github.com/geohot/minikeyvalue) - Распределенное хранилище ключевых значений на ~1000 строк.
+* [seaweedfs](https://github.com/chrislusf/seaweedfs) - SeaweedFS - простая и высокомасштабируемая распределенная файловая система для небольших файлов.
+* [svfs](https://github.com/ovh/svfs) - Виртуальная файловая система над Openstack Swift, построенная на основе fuse.
 
 ## Database
 
-*Databases implemented in Go.*
+*Базы данных, реализованные на Go.*
 
-* [BigCache](https://github.com/allegro/bigcache) - Efficient key/value cache for gigabytes of data.
-* [bolt](https://github.com/boltdb/bolt) - A low-level key/value database for Go. This original version by Ben Johnson has been marked as unmaintained and forked by [etcd-io bbolt](https://github.com/etcd-io/bbolt).
-* [buntdb](https://github.com/tidwall/buntdb) - A fast, embeddable, in-memory key/value database for Go with custom indexing and spatial support.
-* [cache2go](https://github.com/muesli/cache2go) - An in-memory key:value cache which supports automatic invalidation based on timeouts.
-* [clover](https://github.com/ostafen/clover) - A lightweight document-oriented NoSQL database written in pure Golang.
-* [cockroach](https://github.com/cockroachdb/cockroach) - A Scalable, Geo-Replicated, Transactional Datastore
-* [couchcache](https://github.com/codingsince1985/couchcache) - A RESTful caching micro-service backed by Couchbase server.
-* [CovenantSQL](https://github.com/CovenantSQL/CovenantSQL) - A SQL Database with Blockchain features.
-* [dgraph](https://github.com/dgraph-io/dgraph) - Scalable, Distributed, Low Latency, High Throughput Graph Database.
-* [diskv](https://github.com/peterbourgon/diskv) - A home-grown disk-backed key-value store.
-* [dolt](https://github.com/dolthub/dolt) - A MySQL-compatible database with Git-style version control. The first SQL database you can branch and merge.
-* [eliasdb](https://github.com/krotik/eliasdb) - Dependency-free, transactional graph database with REST API, phrase search and SQL-like query language.
-* [emitter](https://github.com/emitter-io/emitter) - Scalable, low-latency, distributed & secure pub/sub database with time-series message storage, suitable for IoT, gaming, apps and real-time web.
-* [forestdb](https://github.com/couchbase/goforestdb) - Go bindings for ForestDB.
-* [frostdb](https://github.com/polarsignals/frostdb/) - Embeddable column database written in Go. 
-* [GCache](https://github.com/bluele/gcache) - Cache library with support for expirable Cache, LFU, LRU and ARC.
-* [geocache](https://github.com/melihmucuk/geocache) - An in-memory cache that is suitable for geolocation based applications.
-* [go-cache](https://github.com/pmylund/go-cache) - An in-memory key:value store/cache (similar to Memcached) library for Go, suitable for single-machine applications.
-* [godis](https://github.com/hdt3213/godis) - A Golang implemented high-performance Redis server and cluster
-* [goleveldb](https://github.com/syndtr/goleveldb) - An implementation of the [LevelDB](https://github.com/google/leveldb) key/value database in the Go.
-* [groupcache](https://github.com/golang/groupcache) - Groupcache is a caching and cache-filling library, intended as a replacement for memcached in many cases.
-* [immudb](https://github.com/codenotary/immudb) - Database with built-in cryptographic proof and verification. Can operate as a key-value store or as relational database (SQL).
-* [influxdb](https://github.com/influxdb/influxdb) - Scalable datastore for metrics, events, and real-time analytics
-* [ledisdb](https://github.com/siddontang/ledisdb) - Ledisdb is a high performance NoSQL like Redis based on LevelDB.
-* [levigo](https://github.com/jmhodges/levigo) - Levigo is a Go wrapper for LevelDB.
-* [moss](https://github.com/couchbase/moss) - Moss is a simple LSM key-value storage engine written in 100% Go.
-* [noms](https://github.com/attic-labs/noms) - The versioned, forkable, syncable database.
-* [objectbox-go](https://github.com/objectbox/objectbox-go) - Embedded Object Database (NoSQL) with Go API.
-* [piladb](https://github.com/fern4lvarez/piladb) - Lightweight RESTful database engine based on stack data structures.
-* [pREST](https://github.com/nuveo/prest) - Serve a RESTful API from any PostgreSQL database.
-* [prometheus](https://github.com/prometheus/prometheus) - Monitoring system and time series database.
-* [rqlite](https://github.com/rqlite/rqlite) - The lightweight, distributed, relational database built on SQLite.
-* [scribble](https://github.com/nanobox-io/golang-scribble) - A tiny flat file JSON store.
-* [SpiceDB](https://github.com/authzed/spicedb) - A [Zanzibar](https://research.google/pubs/pub48190/)-inspired database that stores, computes, and validates application permissions with support for multiple database backends.
-* [tidb](https://github.com/pingcap/tidb) - TiDB is a distributed SQL database. Inspired by the design of Google F1.
-* [tiedot](https://github.com/HouzuoGuo/tiedot) - Your NoSQL database powered by Golang.
-* [Tile38](https://github.com/tidwall/tile38) - A geolocation DB with spatial index and realtime geofencing.
+* [BigCache](https://github.com/allegro/bigcache) - Эффективный кэш ключей/значений для гигабайтов данных.
+* [bolt](https://github.com/boltdb/bolt) - низкоуровневая база данных ключей/значений для Go. Эта оригинальная версия, созданная Беном Джонсоном, была помечена как неподдерживаемая и развита на [etcd-io bbolt](https://github.com/etcd-io/bbolt).
+* [buntdb](https://github.com/tidwall/buntdb) - Быстрая, встраиваемая, in-memory база данных ключей/значений для Go с пользовательской индексацией и пространственной поддержкой.
+* [cache2go](https://github.com/muesli/cache2go) - Кэш in-memory ключ:значение, поддерживающий автоматическое аннулирование на основе таймаутов.
+* [clover](https://github.com/ostafen/clover) - Легкая документо-ориентированная NoSQL база данных, написанная на чистом Golang.
+* [cockroach](https://github.com/cockroachdb/cockroach) - Масштабируемое, геореплицируемое, транзакционное хранилище данных.
+* [couchcache](https://github.com/codingsince1985/couchcache) - RESTful микросервис кэширования, поддерживаемый сервером Couchbase.
+* [CovenantSQL](https://github.com/CovenantSQL/CovenantSQL) - База данных SQL с функциями блокчейна.
+* [dgraph](https://github.com/dgraph-io/dgraph) - Масштабируемая, распределенная, с низкой задержкой и высокой пропускной способностью база данных графиков.
+* [diskv](https://github.com/peterbourgon/diskv) - Отечественное хранилище ключевых значений с поддержкой дисков.
+* [dolt](https://github.com/dolthub/dolt) - MySQL-совместимая база данных с контролем версий в стиле Git. Первая SQL-база данных, которую можно разветвлять и объединять.
+* [eliasdb](https://github.com/krotik/eliasdb) - Независящая от зависимостей, транзакционная база данных графов с REST API, поиском по фразам и SQL-подобным языком запросов.
+* [emitter](https://github.com/emitter-io/emitter) - Масштабируемая, распределенная и безопасная база данных pub/sub с низким уровнем задержек и хранением сообщений временных рядов, подходит для IoT, игр, приложений и веба в реальном времени.
+* [forestdb](https://github.com/couchbase/goforestdb) - Связка Go для ForestDB.
+* [frostdb](https://github.com/polarsignals/frostdb/) - Встраиваемая колоночная база данных, написанная на Go. 
+* [GCache](https://github.com/bluele/gcache) - Библиотека кэша с поддержкой расширяемого кэша, LFU, LRU и ARC.
+* [geocache](https://github.com/melihmucuk/geocache) - Кэш in-memory, который подходит для приложений, основанных на геолокации.
+* [go-cache](https://github.com/pmylund/go-cache) - Библиотека in-memory key:value store/cache (аналогичная Memcached) для Go, подходит для одномашинных приложений.
+* [godis](https://github.com/hdt3213/godis) - реализованный на Golang высокопроизводительный сервер и кластер Redis.
+* [goleveldb](https://github.com/syndtr/goleveldb) - Реализация базы данных ключей/значений [LevelDB](https://github.com/google/leveldb) в Go.
+* [groupcache](https://github.com/golang/groupcache) - Groupcache - это библиотека для кэширования и заполнения кэша, предназначенная для замены memcached во многих случаях.
+* [immudb](https://github.com/codenotary/immudb) - База данных со встроенной криптографической проверкой и доказательством. Может работать как хранилище ключевых значений или как реляционная база данных (SQL).
+* [influxdb](https://github.com/influxdb/influxdb) - Масштабируемое хранилище данных для метрик, событий и аналитики в реальном времени.
+* [ledisdb](https://github.com/siddontang/ledisdb) - Ledisdb - высокопроизводительная NoSQL, подобная Redis, основанная на LevelDB.
+* [levigo](https://github.com/jmhodges/levigo) - Levigo является оберткой Go для LevelDB.
+* [moss](https://github.com/couchbase/moss) - Moss - простой LSM-движок для хранения ключевых значений, написанный на 100% Go.
+* [noms](https://github.com/attic-labs/noms) - Версионная, вилочная, синхронизируемая база данных.
+* [objectbox-go](https://github.com/objectbox/objectbox-go) - Встраиваемая объектная база данных (NoSQL) с Go API.
+* [piladb](https://github.com/fern4lvarez/piladb) - Легкий RESTful движок баз данных, основанный на стековых структурах данных.
+* [pREST](https://github.com/nuveo/prest) - Предоставление RESTful API из любой базы данных PostgreSQL.
+* [prometheus](https://github.com/prometheus/prometheus) - Система мониторинга и база данных временных рядов.
+* [rqlite](https://github.com/rqlite/rqlite) - Легкая, распределенная, реляционная база данных, построенная на SQLite.
+* [scribble](https://github.com/nanobox-io/golang-scribble) - Крошечное плоское хранилище JSON-файлов.
+* [SpiceDB](https://github.com/authzed/spicedb) - База данных, вдохновленная [Zanzibar](https://research.google/pubs/pub48190/), которая хранит, вычисляет и проверяет разрешения приложений с поддержкой нескольких бэкендов баз данных.
+* [tidb](https://github.com/pingcap/tidb) - TiDB - распределенная база данных SQL. Вдохновлена дизайном Google F1.
+* [tiedot](https://github.com/HouzuoGuo/tiedot) - Ваша NoSQL база данных на базе Golang.
+* [Tile38](https://github.com/tidwall/tile38) - Геолокационная БД с пространственным индексом и геозоной в реальном времени.
+  
+*Миграция схем баз данных.*
 
-*Database schema migration.*
+* [darwin](https://github.com/GuiaBolso/darwin) - Библиотека эволюции схем баз данных для Go
+* [goose](https://github.com/steinbacher/goose) - Инструмент миграции баз данных. Вы можете управлять эволюцией базы данных, создавая инкрементные SQL- или Go-скрипты.
+* [gormigrate](https://github.com/go-gormigrate/gormigrate) - Помощник миграции схем баз данных для Gorm ORM.
+* [migrate](https://github.com/golang-migrate/migrate) - обработка миграции баз данных в Golang с поддержкой MySQL, PostgreSQL, Cassandra и SQLite.
+* [pravasan](https://github.com/pravasan/pravasan) - Простой инструмент миграции - в настоящее время для MySQL, но в скором времени планируется поддержка Postgres, SQLite, MongoDB и т.д.,
+* [soda](https://github.com/markbates/pop/tree/master/soda) - Миграция баз данных, создание, ORM и т.д... для MySQL, PostgreSQL и SQLite.
+* [sql-migrate](https://github.com/rubenv/sql-migrate) - Инструмент для миграции баз данных. Позволяет встраивать миграции в приложение с помощью go-bindata.
 
-* [darwin](https://github.com/GuiaBolso/darwin) - Database schema evolution library for Go
-* [goose](https://github.com/steinbacher/goose) - Database migration tool. You can manage your database's evolution by creating incremental SQL or Go scripts.
-* [gormigrate](https://github.com/go-gormigrate/gormigrate) - Database schema migration helper for Gorm ORM.
-* [migrate](https://github.com/golang-migrate/migrate) - Database migration handling in Golang support MySQL, PostgreSQL, Cassandra, and SQLite.
-* [pravasan](https://github.com/pravasan/pravasan) - Simple Migration tool - currently for MySQL but planning to support soon for Postgres, SQLite, MongoDB, etc.,
-* [soda](https://github.com/markbates/pop/tree/master/soda) - Database migration, creation, ORM, etc... for MySQL, PostgreSQL, and SQLite.
-* [sql-migrate](https://github.com/rubenv/sql-migrate) - Database migration tool. Allows embedding migrations into the application using go-bindata.
+*Инструменты для работы с базами данных.*
 
-*Database tools.*
+* [go-mysql](https://github.com/siddontang/go-mysql) - Набор инструментов go для работы с протоколом MySQL и репликацией.
+* [go-mysql-elasticsearch](https://github.com/siddontang/go-mysql-elasticsearch) - автоматическая синхронизация данных MySQL с Elasticsearch.
+* [kingshard](https://github.com/flike/kingshard) - kingshard - это высокопроизводительный прокси для MySQL на базе Golang.
+* [myreplication](https://github.com/2tvenom/myreplication) - Слушатель репликации бинарного журнала MySql. Поддерживает репликацию на основе операторов и строк.
+* [orchestrator](https://github.com/openark/orchestrator) - Менеджер и визуализатор топологии репликации MySQL
+* [pgweb](https://github.com/sosedoff/pgweb) - Веб-браузер баз данных PostgreSQL
+* [vitess](https://github.com/youtube/vitess) - vitess предоставляет серверы и инструменты, которые облегчают масштабирование баз данных MySQL для крупномасштабных веб-сервисов.
+* [usql](https://github.com/xo/usql) - универсальный интерфейс командной строки для баз данных SQL.
 
-* [go-mysql](https://github.com/siddontang/go-mysql) - A go toolset to handle MySQL protocol and replication.
-* [go-mysql-elasticsearch](https://github.com/siddontang/go-mysql-elasticsearch) - Sync your MySQL data into Elasticsearch automatically.
-* [kingshard](https://github.com/flike/kingshard) - kingshard is a high performance proxy for MySQL powered by Golang.
-* [myreplication](https://github.com/2tvenom/myreplication) - MySql binary log replication listener. Support statement and row based replication.
-* [orchestrator](https://github.com/openark/orchestrator) - MySQL replication topology manager & visualizer
-* [pgweb](https://github.com/sosedoff/pgweb) - A web-based PostgreSQL database browser
-* [vitess](https://github.com/youtube/vitess) - vitess provides servers and tools which facilitate scaling of MySQL databases for large scale web services.
-* [usql](https://github.com/xo/usql) - universal command-line interface for SQL databases
+*Построитель SQL-запросов, библиотеки для построения и использования SQL.*
 
-*SQL query builder, libraries for building and using SQL.*
-
-* [buildsqlx](https://github.com/arthurkushman/buildsqlx) - Go Database query builder library
+* [buildsqlx](https://github.com/arthurkushman/buildsqlx) - Библиотека построителя запросов к базам данных Go
 * [dat](https://github.com/mgutz/dat) - Go Postgres Data Access Toolkit
-* [Dotsql](https://github.com/gchaincl/dotsql) - Go library that helps you keep sql files in one place and use it with ease.
-* [goqu](https://github.com/doug-martin/goqu) - An idiomatic SQL builder and query library.
-* [grimoire](https://github.com/Fs02/grimoire) - Grimoire is a database access layer and validation for golang. (Support: MySQL, PostgreSQL and SQLite3).
-* [igor](https://github.com/galeone/igor) - Abstraction layer for PostgreSQL that supports advanced functionality and uses gorm-like syntax.
-* [ozzo-dbx](https://github.com/go-ozzo/ozzo-dbx) - Powerful data retrieval methods as well as DB-agnostic query building capabilities.
-* [SQLBoiler](https://github.com/volatiletech/sqlboiler) - a tool to generate a Go ORM tailored to your database schema. It is a "database-first" ORM as opposed to "code-first", and you must first create your database.
-* [sqrl](https://github.com/elgris/sqrl) - SQL query builder, fork of Squirrel with improved performance.
-* [Squirrel](https://github.com/Masterminds/squirrel) - Go library that helps you build SQL queries.
-* [xo](https://github.com/knq/xo) - Generate idiomatic Go code for databases based on existing schema definitions or custom queries supporting PostgreSQL, MySQL, SQLite, Oracle, and Microsoft SQL Server.
+* [Dotsql](https://github.com/gchaincl/dotsql) - библиотека Go, которая помогает хранить sql-файлы в одном месте и легко использовать их.
+* [goqu](https://github.com/doug-martin/goqu) - Идиоматический SQL-конструктор и библиотека запросов.
+* [grimoire](https://github.com/Fs02/grimoire) - Grimoire - это слой доступа к базам данных и валидации для golang. (Поддержка: MySQL, PostgreSQL и SQLite3).
+* [igor](https://github.com/galeone/igor) - Уровень абстракции для PostgreSQL, поддерживающий расширенную функциональность и использующий gorm-подобный синтаксис.
+* [ozzo-dbx](https://github.com/go-ozzo/ozzo-dbx) - Мощные методы поиска данных, а также возможности построения запросов, не зависящих от БД.
+* [SQLBoiler](https://github.com/volatiletech/sqlboiler) - инструмент для генерации Go ORM, адаптированного под схему вашей базы данных. Это ORM «database-first», в отличие от «code-first», и вы должны сначала создать свою базу данных.
+* [sqrl](https://github.com/elgris/sqrl) - построитель SQL-запросов, форк Squirrel с улучшенной производительностью.
+* [Squirrel](https://github.com/Masterminds/squirrel) - библиотека Go, помогающая строить SQL-запросы.
+* [xo](https://github.com/knq/xo) - Генерация идиоматического Go-кода для баз данных на основе существующих определений схем или пользовательских запросов с поддержкой PostgreSQL, MySQL, SQLite, Oracle и Microsoft SQL Server.
 
 
 ## Database Drivers
 
-*Libraries for connecting and operating databases.*
+*Библиотеки для подключения и работы с базами данных.*
 
-* Relational Databases
-    * [bgc](https://github.com/viant/bgc) - Datastore Connectivity for BigQuery for go.
-    * [firebirdsql](https://github.com/nakagami/firebirdsql) - Firebird RDBMS SQL driver for Go
-    * [go-adodb](https://github.com/mattn/go-adodb) - Microsoft ActiveX Object DataBase driver for go that using database/sql.
-    * [go-bqstreamer](https://github.com/rounds/go-bqstreamer) - BigQuery fast and concurrent stream insert.
-    * [go-mssqldb](https://github.com/denisenkom/go-mssqldb) - Microsoft MSSQL driver in go language.
-    * [go-oci8](https://github.com/mattn/go-oci8) - Oracle driver for go that using database/sql.
-    * [go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) - MySQL driver for Go.
-    * [go-sqlite3](https://github.com/mattn/go-sqlite3) - SQLite3 driver for go that using database/sql.
-    * [gofreetds](https://github.com/minus5/gofreetds) Microsoft MSSQL driver. Go wrapper over [FreeTDS](http://www.freetds.org).
-    * [pgx](https://github.com/jackc/pgx) - PostgreSQL driver supporting features beyond those exposed by database/sql.
-    * [pq](https://github.com/lib/pq) - Pure Go Postgres driver for database/sql.
+* Реляционные базы данных
+    * [bgc](https://github.com/viant/bgc) - Подключение к хранилищу данных для BigQuery для Go.
+    * [firebirdsql](https://github.com/nakagami/firebirdsql) - SQL-драйвер РСУБД Firebird для Go.
+    * [go-adodb](https://github.com/mattn/go-adodb) - Драйвер Microsoft ActiveX Object DataBase для go, использующий базу данных/sql.
+    * [go-bqstreamer](https://github.com/rounds/go-bqstreamer) - быстрая и параллельная потоковая вставка BigQuery.
+    * [go-mssqldb](https://github.com/denisenkom/go-mssqldb) - Драйвер Microsoft MSSQL на языке go.
+    * [go-oci8](https://github.com/mattn/go-oci8) - Драйвер Oracle для go, использующий базу данных/sql.
+    * [go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) - Драйвер MySQL для Go.
+    * [go-sqlite3](https://github.com/mattn/go-sqlite3) - Драйвер SQLite3 для Go, использующий базу данных/sql.
+    * [gofreetds](https://github.com/minus5/gofreetds) Драйвер Microsoft MSSQL. Обертка для Go над [FreeTDS](http://www.freetds.org).
+    * [pgx](https://github.com/jackc/pgx) - драйвер PostgreSQL, поддерживающий функции, выходящие за рамки тех, что предоставляет database/sql.
+    * [pq](https://github.com/lib/pq) - Чистый драйвер Go Postgres для database/sql.
 
-* NoSQL Databases
-    * [aerospike-client-go](https://github.com/aerospike/aerospike-client-go) - Aerospike client in Go language.
-    * [arangolite](https://github.com/solher/arangolite) - Lightweight golang driver for ArangoDB.
-    * [asc](https://github.com/viant/asc) - Datastore Connectivity for Aerospike for go.
-    * [cayley](https://github.com/google/cayley) - A graph database with support for multiple backends.
-    * [dsc](https://github.com/viant/dsc) - Datastore connectivity for SQL, NoSQL, structured files.
-    * [dynago](https://github.com/underarmour/dynago) - Dynago is a principle of least surprise client for DynamoDB
-    * [go-couchbase](https://github.com/couchbase/go-couchbase) - Couchbase client in Go
-    * [go-couchdb](https://github.com/fjl/go-couchdb) - Yet another CouchDB HTTP API wrapper for Go
-    * [gocb](https://github.com/couchbase/gocb) - Official Couchbase Go SDK
-    * [gocql](http://gocql.github.io) - A Go language driver for Apache Cassandra.
-    * [gomemcache](https://github.com/bradfitz/gomemcache/) - memcache client library for the Go programming language.
-    * [gorethink](https://github.com/GoRethink/gorethink) - Go language driver for RethinkDB
-    * [goriak](https://github.com/zegl/goriak) - Go language driver for Riak KV   
-    * [mongo-go-driver](https://github.com/mongodb/mongo-go-driver) - The Go driver for MongoDB
-    * [neo4j](https://github.com/cihangir/neo4j) - Neo4j Rest API Bindings for Golang
-    * [Neo4j-GO](https://github.com/davemeehan/Neo4j-GO) - Neo4j REST Client in golang.
-    * [neoism](https://github.com/jmcvetta/neoism) - Neo4j client for Golang
-    * [redigo](https://github.com/gomodule/redigo) - Redigo is a Go client for the Redis database.
-    * [redis](https://github.com/go-redis/redis) - Redis client for Golang
-    * [redis](https://github.com/hoisie/redis) - A simple, powerful Redis client for Go.
-    * [redeo](https://github.com/bsm/redeo) - Redis-protocol compatible TCP servers/services.
+* Базы данных NoSQL
+    * [aerospike-client-go](https://github.com/aerospike/aerospike-client-go) - Клиент Aerospike на языке Go.
+    * [arangolite](https://github.com/solher/arangolite) - Легкий golang-драйвер для ArangoDB.
+    * [asc](https://github.com/viant/asc) - Подключение к хранилищу данных для Aerospike на языке Go.
+    * [cayley](https://github.com/google/cayley) - Графовая база данных с поддержкой нескольких бэкендов.
+    * [dsc](https://github.com/viant/dsc) - Возможность подключения к хранилищу данных для SQL, NoSQL, структурированных файлов.
+    * [dynago](https://github.com/underarmour/dynago) - Dynago - клиент для DynamoDB, работающий по принципу наименьшего удивления.
+    * [go-couchbase](https://github.com/couchbase/go-couchbase) - Клиент Couchbase на Go
+    * [go-couchdb](https://github.com/fjl/go-couchdb) - Еще одна обертка CouchDB HTTP API для Go
+    * [gocb](https://github.com/couchbase/gocb) - Официальный Couchbase Go SDK
+    * [gocql](http://gocql.github.io) - Драйвер языка Go для Apache Cassandra.
+    * [gomemcache](https://github.com/bradfitz/gomemcache/) - клиентская библиотека memcache для языка программирования Go.
+    * [gorethink](https://github.com/GoRethink/gorethink) - Драйвер на языке Go для RethinkDB
+    * [goriak](https://github.com/zegl/goriak) - драйвер языка Go для Riak KV   
+    * [mongo-go-driver](https://github.com/mongodb/mongo-go-driver) - Go-драйвер для MongoDB
+    * [neo4j](https://github.com/cihangir/neo4j) - Связка Neo4j Rest API для Golang
+    * [Neo4j-GO](https://github.com/davemeehan/Neo4j-GO) - REST-клиент Neo4j на golang.
+    * [neoism](https://github.com/jmcvetta/neoism) - Neo4j клиент для Golang
+    * [redigo](https://github.com/gomodule/redigo) - Redigo - Go-клиент для базы данных Redis.
+    * [redis](https://github.com/go-redis/redis) - Клиент Redis для Golang
+    * [redis](https://github.com/hoisie/redis) - Простой, мощный клиент Redis для Go.
+    * [redeo](https://github.com/bsm/redeo) - TCP-серверы/сервисы, совместимые с Redis-протоколом.
 
-* Search and Analytic Databases
-    * [bleve](https://github.com/blevesearch/bleve) - A modern text indexing library for go.
-    * [elastic](https://github.com/olivere/elastic) - Elasticsearch client for Go.
-    * [elastigo](https://github.com/mattbaird/elastigo) - A Elasticsearch client library.
-    * [skizze](https://github.com/seiflotfy/skizze) - A probabilistic data-structures service and storage.
+* Поисковые и аналитические базы данных
+    * [bleve](https://github.com/blevesearch/bleve) - Современная библиотека индексации текста для Go.
+    * [elastic](https://github.com/olivere/elastic) - Клиент Elasticsearch для Go.
+    * [elastigo](https://github.com/mattbaird/elastigo) - Клиентская библиотека Elasticsearch.
+    * [skizze](https://github.com/seiflotfy/skizze) - Сервис и хранилище вероятностных структур данных.
 
-* Multiple Backends
-    * [Fiber Storage](https://github.com/gofiber/storage) - Premade storage drivers that implement the [Storage](https://github.com/gofiber/storage/blob/main/storage.go) interface. 
-    * [gokv](https://github.com/philippgille/gokv) - A simple key-value store interface and many implementations for Go (Redis, Consul, etcd, bbolt, BadgerDB, LevelDB, Memcached, DynamoDB, S3, PostgreSQL, MongoDB, CockroachDB and many more) 
+* Множество бэкендов
+    * [Fiber Storage](https://github.com/gofiber/storage) - готовые драйверы хранилищ, реализующие интерфейс [Storage](https://github.com/gofiber/storage/blob/main/storage.go). 
+    * [gokv](https://github.com/philippgille/gokv) - простой интерфейс хранилища ключевых значений и множество реализаций для Go (Redis, Consul, etcd, bbolt, BadgerDB, LevelDB, Memcached, DynamoDB, S3, PostgreSQL, MongoDB, CockroachDB и многие другие)
